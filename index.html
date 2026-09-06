@@ -143,9 +143,85 @@
 
         <p>Computer Literacy and Innovation Centre</p>
 
-        <p>Email: info@nexatechcentre.com</p>
-
         <p>Location: Murang'a / Nyeri County, Kenya</p>
+
+        <form action="https://formspree.io/f/mzebaqdo" method="POST">
+
+            <div class="form-group">
+
+                <label for="name">Full Name</label>
+
+                <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    placeholder="Enter your full name"
+                    autocomplete="name"
+                    required
+                >
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label for="email">Email Address</label>
+
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="Enter your email address"
+                    autocomplete="email"
+                    required
+                >
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label for="subject">Subject</label>
+
+                <input
+                    type="text"
+                    id="subject"
+                    name="subject"
+                    placeholder="What is your message about?"
+                    required
+                >
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label for="message">Message</label>
+
+                <textarea
+                    id="message"
+                    name="message"
+                    rows="6"
+                    placeholder="Write your message here..."
+                    required
+                ></textarea>
+
+            </div>
+
+
+            <!-- Email subject shown in Formspree -->
+            <input
+                type="hidden"
+                name="_subject"
+                value="New NexaTech Website Enquiry"
+            >
+
+
+            <button type="submit" class="button">
+                Send Message
+            </button>
+
+        </form>
 
     </section>
 
